@@ -12,7 +12,7 @@ prepare it in a standard format.
 - [x] Phase 3: Query log
 - [x] Phase 4: SDTM-style mapping
 - [x] Phase 5: Data quality dashboard
-- [ ] Phase 6: Data Validation Plan
+- [x] Phase 6: Data Validation Plan
 
 ## How to run
 1. `pip install -r requirements.txt`
@@ -69,3 +69,16 @@ subjects, queries by check, and how many subjects are held back from SDTM. You
 can filter by site, form, and check, and download the filtered queries as CSV.
 
 ![Dashboard](images/dashboard.png)
+
+## Data Validation Plan
+
+[docs/data_validation_plan.md](docs/data_validation_plan.md) explains every edit check, the query process, the data cleaning gate before SDTM, and the limits of this project, in the style of a real clinical data management document.
+
+## What this project shows
+
+- Building a synthetic clinical trial dataset with known planted errors
+- Writing 11 edit checks in Python and testing them against an answer key (36 of 36 caught)
+- Producing a query log in the format sent to trial sites
+- Mapping clean data to simplified SDTM-style DM, VS and AE domains
+- Reporting data quality in an interactive Streamlit dashboard
+- Documenting the work in a Data Validation Plan
