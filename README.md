@@ -8,7 +8,7 @@ prepare it in a standard format.
 
 ## Status
 - [x] Phase 1: Fake trial dataset with planted mistakes
-- [ ] Phase 2: Edit checks
+- [x] Phase 2: Edit checks
 - [ ] Phase 3: Query log
 - [ ] Phase 4: SDTM-style mapping
 - [ ] Phase 5: Data quality dashboard
