@@ -1,0 +1,37 @@
+dataset,subject_id,field,problem
+demographics,ABC-073,age,Missing age
+demographics,ABC-081,age,Missing age
+demographics,ABC-082,age,Missing age
+demographics,ABC-093,age,Missing age
+demographics,ABC-006,age,Missing age
+demographics,ABC-094,age,Age out of range
+demographics,ABC-054,age,Age out of range
+demographics,ABC-002,age,Age out of range
+demographics,ABC-109,sex,Invalid sex code
+demographics,ABC-001,sex,Invalid sex code
+vitals,ABC-053,sbp/dbp,Systolic lower than diastolic
+vitals,ABC-118,sbp/dbp,Systolic lower than diastolic
+vitals,ABC-095,sbp/dbp,Systolic lower than diastolic
+vitals,ABC-001,sbp/dbp,Systolic lower than diastolic
+vitals,ABC-031,heart_rate,Heart rate out of range
+vitals,ABC-086,heart_rate,Heart rate out of range
+vitals,ABC-096,heart_rate,Heart rate out of range
+vitals,ABC-099,weight_kg,Missing weight
+vitals,ABC-047,weight_kg,Missing weight
+vitals,ABC-113,weight_kg,Missing weight
+vitals,ABC-093,weight_kg,Missing weight
+vitals,ABC-090,weight_kg,Missing weight
+vitals,ABC-025,visit_date,Visit before consent
+vitals,ABC-102,visit_date,Visit before consent
+vitals,ABC-035,visit_date,Visit before consent
+adverse_events,ABC-061,end_date,AE end date before start date
+adverse_events,ABC-092,end_date,AE end date before start date
+adverse_events,ABC-016,end_date,AE end date before start date
+adverse_events,ABC-019,end_date,AE end date before start date
+adverse_events,ABC-021,ae_term,Missing AE term
+adverse_events,ABC-085,ae_term,Missing AE term
+adverse_events,ABC-120,ae_term,Missing AE term
+adverse_events,ABC-998,subject_id,AE for unknown subject
+adverse_events,ABC-999,subject_id,AE for unknown subject
+demographics,ABC-070,subject_id,Duplicate subject
+demographics,ABC-017,subject_id,Duplicate subject
