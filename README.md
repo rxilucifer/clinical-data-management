@@ -10,8 +10,8 @@ prepare it in a standard format.
 - [x] Phase 1: Fake trial dataset with planted mistakes
 - [x] Phase 2: Edit checks
 - [x] Phase 3: Query log
-- [ ] Phase 4: SDTM-style mapping
-- [ ] Phase 5: Data quality dashboard
+- [x] Phase 4: SDTM-style mapping
+- [x] Phase 5: Data quality dashboard
 - [ ] Phase 6: Data Validation Plan
 
 ## How to run
@@ -19,6 +19,7 @@ prepare it in a standard format.
 2. `python make_trial_data.py` creates the fake trial data in `data/`
 3. `python run_checks.py` runs the edit checks and compares them with the planted mistakes
 4. `python make_query_log.py` creates the query log in `output/`
+5. `python make_sdtm.py` creates SDTM-style datasets in `output/sdtm/`
 
 ## Edit checks
 
@@ -44,3 +45,19 @@ prepare it in a standard format.
 `make_query_log.py` turns the edit check findings into a query log, like the
 ones data managers send to trial sites. Each query has an ID, site, subject,
 form, field, a message, and a status. A sample is in `output/query_log.csv`.
+
+## SDTM-style mapping
+
+`make_sdtm.py` converts the cleaned data into three simplified SDTM domains.
+Only subjects with no open queries are mapped. Subjects with open queries are
+held back (see `output/sdtm/held_back_subjects.csv`).
+
+| Domain | Source | Main mapping |
+|--------|--------|--------------|
+| DM | demographics.csv | subject ID becomes USUBJID (study-site-subject), age to AGE, sex to SEX, arm to ARM and ARMCD, consent date to RFICDTC |
+| VS | vitals.csv | one row per test per visit (wide to long): SYSBP, DIABP, HR, WEIGHT with units, visit date to VSDTC |
+| AE | adverse_events.csv | term to AETERM, severity to AESEV (upper case), serious to AESER, dates to AESTDTC and AEENDTC |
+
+**Limits:** this is a simplified teaching version, not full CDISC conformance.
+It leaves out many standard variables, MedDRA coding of adverse events,
+Define-XML, and SAS transport (XPT) files.
