@@ -1,0 +1,37 @@
+check_id,dataset,subject_id,field,value,issue
+DM-01,demographics,ABC-006,age,,Missing age
+DM-01,demographics,ABC-073,age,,Missing age
+DM-01,demographics,ABC-081,age,,Missing age
+DM-01,demographics,ABC-082,age,,Missing age
+DM-01,demographics,ABC-093,age,,Missing age
+DM-02,demographics,ABC-002,age,150.0,Age out of range
+DM-02,demographics,ABC-054,age,150.0,Age out of range
+DM-02,demographics,ABC-094,age,150.0,Age out of range
+DM-03,demographics,ABC-001,sex,X,Invalid sex code
+DM-03,demographics,ABC-109,sex,X,Invalid sex code
+DM-04,demographics,ABC-070,subject_id,ABC-070,Duplicate subject
+DM-04,demographics,ABC-017,subject_id,ABC-017,Duplicate subject
+VS-01,vitals,ABC-001,sbp,72,Systolic lower than diastolic
+VS-01,vitals,ABC-053,sbp,76,Systolic lower than diastolic
+VS-01,vitals,ABC-095,sbp,72,Systolic lower than diastolic
+VS-01,vitals,ABC-118,sbp,73,Systolic lower than diastolic
+VS-02,vitals,ABC-031,heart_rate,300,Heart rate out of range
+VS-02,vitals,ABC-086,heart_rate,300,Heart rate out of range
+VS-02,vitals,ABC-096,heart_rate,300,Heart rate out of range
+VS-03,vitals,ABC-047,weight_kg,,Missing weight
+VS-03,vitals,ABC-090,weight_kg,,Missing weight
+VS-03,vitals,ABC-093,weight_kg,,Missing weight
+VS-03,vitals,ABC-099,weight_kg,,Missing weight
+VS-03,vitals,ABC-113,weight_kg,,Missing weight
+VS-04,vitals,ABC-025,visit_date,2025-06-28 00:00:00,Visit before consent
+VS-04,vitals,ABC-035,visit_date,2025-03-31 00:00:00,Visit before consent
+VS-04,vitals,ABC-102,visit_date,2025-06-27 00:00:00,Visit before consent
+AE-01,adverse_events,ABC-016,end_date,2025-04-06 00:00:00,AE end date before start date
+AE-01,adverse_events,ABC-019,end_date,2025-06-17 00:00:00,AE end date before start date
+AE-01,adverse_events,ABC-061,end_date,2025-03-02 00:00:00,AE end date before start date
+AE-01,adverse_events,ABC-092,end_date,2025-03-23 00:00:00,AE end date before start date
+AE-02,adverse_events,ABC-021,ae_term,,Missing AE term
+AE-02,adverse_events,ABC-085,ae_term,,Missing AE term
+AE-02,adverse_events,ABC-120,ae_term,,Missing AE term
+AE-03,adverse_events,ABC-998,subject_id,ABC-998,AE for unknown subject
+AE-03,adverse_events,ABC-999,subject_id,ABC-999,AE for unknown subject
