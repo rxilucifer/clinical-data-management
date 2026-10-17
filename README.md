@@ -61,3 +61,11 @@ held back (see `output/sdtm/held_back_subjects.csv`).
 **Limits:** this is a simplified teaching version, not full CDISC conformance.
 It leaves out many standard variables, MedDRA coding of adverse events,
 Define-XML, and SAS transport (XPT) files.
+
+## Data quality dashboard
+
+`dashboard.py` is a Streamlit app that shows queries by site, query rate per 100
+subjects, queries by check, and how many subjects are held back from SDTM. You
+can filter by site, form, and check, and download the filtered queries as CSV.
+
+![Dashboard](images/dashboard.png)
