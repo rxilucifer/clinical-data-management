@@ -20,6 +20,7 @@ prepare it in a standard format.
 3. `python run_checks.py` runs the edit checks and compares them with the planted mistakes
 4. `python make_query_log.py` creates the query log in `output/`
 5. `python make_sdtm.py` creates SDTM-style datasets in `output/sdtm/`
+6. `streamlit run dashboard.py` opens the data quality dashboard
 
 ## Edit checks
 
